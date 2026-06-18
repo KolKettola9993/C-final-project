@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             uiTabControlMenu1 = new Sunny.UI.UITabControlMenu();
             tabPage1 = new TabPage();
             tabPage2 = new TabPage();
@@ -36,7 +38,10 @@
             tabPage5 = new TabPage();
             tabPage6 = new TabPage();
             tabPage7 = new TabPage();
+            imageList1 = new ImageList(components);
+            uiLabel1 = new Sunny.UI.UILabel();
             uiTabControlMenu1.SuspendLayout();
+            tabPage5.SuspendLayout();
             SuspendLayout();
             // 
             // uiTabControlMenu1
@@ -97,6 +102,7 @@
             // 
             // tabPage5
             // 
+            tabPage5.Controls.Add(uiLabel1);
             tabPage5.Location = new Point(201, 0);
             tabPage5.Name = "tabPage5";
             tabPage5.Size = new Size(1222, 774);
@@ -122,6 +128,35 @@
             tabPage7.Text = "Logout";
             tabPage7.UseVisualStyleBackColor = true;
             // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;
+            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = Color.Transparent;
+            imageList1.Images.SetKeyName(0, "a-education-icon-education-icon-11553430161bimwyohogu.png");
+            imageList1.Images.SetKeyName(1, "2331970.png");
+            imageList1.Images.SetKeyName(2, "190190.png");
+            imageList1.Images.SetKeyName(3, "food-icon-7.png");
+            imageList1.Images.SetKeyName(4, "4599210.png");
+            imageList1.Images.SetKeyName(5, "credit-card-bank-icon-png-26.png");
+            imageList1.Images.SetKeyName(6, "10149443.png");
+            imageList1.Images.SetKeyName(7, "340-3408958_results-icons-results-icon-hd-png-download.png");
+            imageList1.Images.SetKeyName(8, "306405.png");
+            imageList1.Images.SetKeyName(9, "12489840.png");
+            imageList1.Images.SetKeyName(10, "1571098.png");
+            // 
+            // uiLabel1
+            // 
+            uiLabel1.BackColor = Color.RoyalBlue;
+            uiLabel1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel1.Location = new Point(3, 0);
+            uiLabel1.Name = "uiLabel1";
+            uiLabel1.Size = new Size(1219, 83);
+            uiLabel1.TabIndex = 0;
+            uiLabel1.Text = "REPORT";
+            uiLabel1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -131,6 +166,7 @@
             Name = "Form1";
             Text = "Form1";
             uiTabControlMenu1.ResumeLayout(false);
+            tabPage5.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -144,5 +180,7 @@
         private TabPage tabPage5;
         private TabPage tabPage6;
         private TabPage tabPage7;
+        private Sunny.UI.UILabel uiLabel1;
+        private ImageList imageList1;
     }
 }
